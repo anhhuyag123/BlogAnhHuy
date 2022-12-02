@@ -4,24 +4,678 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="Asset/css/reset.css">
+    <link rel="stylesheet" href="Asset/css/main.css">
+    <link rel="stylesheet" href="Asset/css/reponsive.css">
     <title>HuyHaBlog</title>
 </head>
 <body>
     <!-- Start header -->
-    <header></header>
+    <header>
+        <ul class="navbar">
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">HOME</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">NEWS</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">Technology</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">TRAVELLING</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">Features</a>
+                <ul class="navbar__child">
+                    <li class="navbar-child__item">
+                       <a href="#" class="navbar-item-child__link">
+                            Music
+                       </a> 
+                    </li>
+                    <li class="navbar-child__item">
+                        <a href="#" class="navbar-item-child__link">
+                            Group
+                        </a>
+                    </li>
+                    <li class="navbar-child__item">
+                        <a href="#" class="navbar-item-child__link">
+                            SUB MENU 3
+                        </a>        
+                    </li>
+                    <li class="navbar-child__item">
+                        <a href="#" class="navbar-item-child__link">
+                            SUB MENU 4
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">CONTACT</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar-item__link">About me</a>
+            </li>
+        </ul>
+        <!-- Navbar mobile -->
+        <label class="navbar__mobile" for="navbar-mobile__check">
+            <i class="fa-solid fa-bars navbar-mobile__icon"></i>
+            <input type="checkbox" id="navbar-mobile__check"  name="navbar-mobile__check" hidden>
+            <ul class="navbar-list__mobile">
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">HOME</a>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">NEWS</a>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">Technology</a>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">TRAVELLING</a>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">Features
+                        <i class="fa-solid fa-caret-right navbar-item-child__icon"></i>
+                        <i class="fa-solid fa-sort-down navbar-item-child__icon-seccon"></i>
+                    </a>
+                    <ul class="navbar-child__mobile">
+                        <li class="navbar-child-item__mobile">
+                           <a href="#" class="navbar-item-child-mobile__link">
+                                Music
+                           </a> 
+                        </li>
+                        <li class="navbar-child-item__mobile">
+                            <a href="#" class="navbar-item-child-mobile__link">
+                                Group
+                            </a>
+                        </li>
+                        <li class="navbar-child-item__mobile">
+                            <a href="#" class="navbar-item-child-mobile__link">
+                                SUB MENU 3
+                            </a>        
+                        </li>
+                        <li class="navbar-child-item__mobile">
+                            <a href="#" class="navbar-item-child-mobile__link">
+                                SUB MENU 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">CONTACT</a>
+                </li>
+                <li class="navbar-item__mobile">
+                    <a href="#" class="navbar-item-mobile__link">About me</a>
+                </li>
+            </ul>
+        </label>
+        <div class="navbar__icon">
+            <a href="#" class="navbar-icon__link">
+                <i class="fa-brands fa-facebook-f navbar-icon__item"></i>
+            </a>
+            <a href="#" class="navbar-icon__link">
+                <i class="fa-brands fa-twitter navbar-icon__item"></i>
+            </a>
+            <a href="#" class="navbar-icon__link">
+                <i class="fa-brands fa-instagram navbar-icon__item"></i>
+            </a>
+            <a href="#" class="navbar-icon__link">
+                <i class="fa-brands fa-pinterest navbar-icon__item"></i>
+            </a>
+            <a href="#" class="navbar-icon__link">
+                <i class="fa-brands fa-youtube navbar-icon__item"></i>
+            </a>
+        </div>
+    </header>
     <!-- End header -->
     <!-- Start -->
-    <div class="logo"></div>
+    <div class="logo">
+        <img src="Asset/Images/logo.png" alt="logoBlog" class="logo__image">
+    </div>
     <!-- End -->
     <div id="main">
         <!-- Start content -->
-        <div class="content"></div>
+        <div class="content">
+            <div class="list__post">
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">12 Jun</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                THE BEAUTY OF THE PHILIPPINE BEACHES
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <a href="detailPost.html" class="image__post-link">
+                                <div class="image__post" style="--image: url('/Asset/Images/post1.jpg')"></div>
+                            </a>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                        <div class="content__post">
+                           <p>
+                            Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                           </p> 
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">12 Jun</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                HOW TO BECOME TOP FASHION DESIGNER
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <a href="#" class="image__post-link">
+                                <div class="image__post" style="--image: url('/Asset/Images/post2.jpg')"></div>
+                            </a>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                        <div class="content__post">
+                           <p>
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur.Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Lorem
+                           </p> 
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">12 Jun</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                THE BEAUTY OF THE PHILIPPINE BEACHES
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <a href="#" class="image__post-link">
+                                <div class="image__post" style="--image: url('/Asset/Images/post3.jpg')"></div>
+                            </a>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                        <div class="content__post">
+                           <p>
+                            Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                           </p> 
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">12 Jun</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                THE BEAUTY OF THE PHILIPPINE BEACHES
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <a href="#" class="image__post-link">
+                                <div class="image__post" style="--image: url('/Asset/Images/post4.jpg')"></div>
+                            </a>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                        <div class="content__post">
+                           <p>
+                            Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                           </p> 
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">12 Jun</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                THE BEAUTY OF THE PHILIPPINE BEACHES
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <a href="#" class="image__post-link">
+                                <div class="image__post" style="--image: url('/Asset/Images/post5.jpg')"></div>
+                            </a>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                        <div class="content__post">
+                           <p>
+                            Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla.
+                           </p> 
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">23 Jan</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                CARTOON INSANE VIMEO VIDEO
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <div class="layer-post-video">
+                                <iframe width="100%" height="370" frameborder="no" src="https://player.vimeo.com/video/59140833" scrolling="no"></iframe>
+                            </div>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="header__post">
+                        <p class="date__post">23 Jan</p> 
+                        <h2 class="title__post">
+                            <a href="#" class="title-post__link">
+                                YOUTUBE VIDEO POST
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="body__post">
+                        <div class="layer__post__image">
+                            <div class="layer-post-video">
+                                <iframe width="100%" height="370" frameborder="no" src="https://www.youtube.com/embed/0zpi-iSGFaY" scrolling="no"></iframe>
+                            </div>
+                            <a href="#" class="content-image__post-link">                    
+                                <p class="content-image__post">
+                                    BY: >ANONYMOUS
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__post">
+                        <a href="#" class="content-footer__post">
+                            CONTINUE READING
+                        </a>
+                        <ul class="list-icon__footer">
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-facebook-f icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-twitter icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-instagram icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-pinterest icon-footer__item"></i>
+                            </a>
+                            <a href="#" class="icon-footer__link">
+                                <i class="fa-brands fa-youtube icon-footer__item"></i>
+                            </a>
+                        </ul>
+                        <ul class="pagination__list">
+                            <li class="pagination__item pagecurrent">
+                                <a href="#" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination-item__link">Next</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination-item__link">Last</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End content -->
         <!-- Start rightDiv -->
-        <div class="rightDiv"></div>
+        <div class="sidebar">
+            <div class="widget">
+                <div class="siderbar__header">
+                    <h2 class="siderbar-header__title">SEARCH BOX</h2>
+                </div>
+                <div class="siderbar__body">
+                    <input type="text" name="search" id="search" class="input__search" placeholder="Type here...">
+                    <a href="#" class="btn__search">
+                        Search
+                    </a>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="siderbar__header">
+                    <h2 class="siderbar-header__title">ABOUT AUTHOR</h2>
+                </div>
+                <img src="/Asset/Images/avarta.jpg" alt="avartar" class="image-about__author">
+                <p class="content__about">Working as a fashion designer can just as well mean supervising a design team at a sportswear company as producing a label under your own name. Although the former career may not seem as glamorous as the latter, it certainly will make your life less stressful.</p>
+            </div>
+            <div class="widget">
+                <div class="siderbar__header">
+                    <h2 class="siderbar-header__title">LATEST POSTS</h2>
+                </div>
+                <div class="laster-post__list">
+                    <div class="laster-post__item">
+                        <img src="/Asset/Images/post1.jpg" alt="laster-post-1" class="laster-post__image">
+                        <p class="laster-post__content">
+                            THE BEAUTY OF THE PHILIPPINE BEACHES
+                        </p>
+                    </div>
+                    <div class="laster-post__item">
+                        <img src="/Asset/Images/post2.jpg" alt="laster-post-1" class="laster-post__image">
+                        <p class="laster-post__content">
+                            HOW TO BECOME TOP FASHION DESIGNER
+                        </p>
+                    </div>
+                    <div class="laster-post__item">
+                        <img src="/Asset/Images/post3.jpg" alt="laster-post-1" class="laster-post__image">
+                        <p class="laster-post__content">
+                            HOW TO MAKE YOUR INCOME STABLE
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="siderbar__header">
+                    <h2 class="siderbar-header__title">CATEGORIES</h2>
+                </div>
+                <div class="categories__content">
+                    <span class="label-size label-size-3">
+                        <a href="#" class="categories-content__link">Activities</a>
+                    </span>
+                    <span class="label-size label-size-5">
+                        <a href="#" class="categories-content__link">Break</a>
+                    </span>
+                    <span class="label-size label-size-5">
+                        <a href="#" class="categories-content__link">Cool</a>
+                    </span>
+                    <span class="label-size label-size-1">                      
+                        <a href="#" class="categories-content__link">Extras</a>
+                    </span>
+                    <span class="label-size label-size-1">                      
+                        <a href="#" class="categories-content__link">Fun</a>
+                    </span>
+                    <span class="label-size label-size-1">
+                        <a href="#" class="categories-content__link">Games</a>
+                    </span>
+                    <span class="label-size label-size-5">
+                        <a href="#" class="categories-content__link">God</a>
+                    </span>
+                    <span class="label-size label-size-5">
+                        <a href="#" class="categories-content__link">Music</a>
+                    </span>
+                    <span class="label-size label-size-3">
+                        <a href="#" class="categories-content__link">Sport</a>
+                    </span>
+                </div>
+            </div>
+            <div class="widget">
+                <div class="siderbar__header">
+                    <h2 class="siderbar-header__title">BLOG ARCHIVE</h2>
+                </div>
+                <div class="archive">
+                    <ul class="archive__list">
+                        <li class="archive__item">
+                            <div class="archive-item__parent">
+                                <i class="fa-solid fa-caret-right archive-iten__icon"></i>
+                                <a href="#" class="archive-iten__link">
+                                    2014 (6)
+                                </a>
+                            </div>
+                            <ul class="archive-sub">
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        June (2)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>                              
+                                    <a href="#" class="archive-sub-item__link">
+                                        February (3)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        January (1)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="archive__item">
+                            <div class="archive-item__parent">
+                                <i class="fa-solid fa-caret-right archive-iten__icon"></i>
+                                <a href="#" class="archive-iten__link">
+                                    2013 (6)
+                                </a>
+                            </div>
+                            <ul class="archive-sub">
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        June (2)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>                              
+                                    <a href="#" class="archive-sub-item__link">
+                                        February (3)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        January (1)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="archive__item">
+                            <div class="archive-item__parent">
+                                <i class="fa-solid fa-caret-right archive-iten__icon"></i>
+                                <a href="#" class="archive-iten__link">
+                                    2012
+                                </a>
+                            </div>
+                            <ul class="archive-sub">
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        June (2)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>                              
+                                    <a href="#" class="archive-sub-item__link">
+                                        February (3)
+                                    </a>
+                                </li>
+                                <li class="archive-sub__item">
+                                    <i class="fa-solid fa-caret-right archive-sub-item__icon"></i>
+                                    <a href="#" class="archive-sub-item__link">
+                                        January (1)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- End  rightDiv -->
     </div>
     <!-- Start header -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer-content__text">
+                Copyright © 2022 Prism | Designed By HuyHA
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
