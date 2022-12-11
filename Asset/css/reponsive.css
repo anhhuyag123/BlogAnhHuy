@@ -49,7 +49,7 @@
         margin-left: 0px;
     }
 
-    .layer__post__image {
+    .layer-post__image {
         min-height: 331px;
     }
 
@@ -82,7 +82,7 @@
         padding: 25px 36px 25px 36px;
     }
 
-    .content__detail-post {
+    .content-detail__post {
         font-family: Halant,serif!important;
         font-size: 16px;
     }
@@ -91,7 +91,7 @@
         margin: 0px;
     }
 
-    .content__detail-post {
+    .content-detail__post {
         margin-bottom: 10px;
     }
 
@@ -172,7 +172,7 @@
         min-height: 173px;
     }
 
-    .layer__post__image {
+    .layer-post__image {
         min-height: 173px;
     }
 
@@ -211,7 +211,7 @@
         font-size: 28px;
     }
     
-    .content__detail-post {
+    .content-detail__post {
         margin-bottom: 0px;
         line-height: 1.8;
     }
