@@ -7,6 +7,8 @@
 
 /** header */
 header {
+    display: flex;
+    justify-content: space-evenly;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,6 +22,7 @@ header {
 /** navbar */
 .navbar {
     display: inline-block;
+    flex: 3;
 }
 
 .navbar__item {
@@ -36,8 +39,11 @@ header {
     color: #FFFFFF;
     font-size: 14px;
     text-decoration: none;
-    padding: 20px;
+    padding: 17px;
     text-transform: uppercase;
+    font-family: Roboto Condensed;
+    font-weight: 300;
+    line-height: 17px;
 }
 
 .navbar-item__link:hover {
@@ -75,6 +81,7 @@ header {
     text-align: center;
     line-height: 50px;
     background-color: #4C4C4C;
+    height: fit-content;
 }
 
 .navbar-item-child__icon--seccon {
@@ -101,11 +108,14 @@ header {
 .navbar-item-mobile__link {
     display: flex;
     align-items: center;
-    font-size: 11px;
     text-decoration: none;
     color: #fff;
     text-align: left;
     padding-left: 15px;
+    font-size: 14px;
+    height: 27px;
+    font-family:  Roboto Condensed, sans-serif;
+    text-transform: capitalize;
 }
 
 #navbar__mobile--check:checked + .navbar-list__mobile {
@@ -169,22 +179,24 @@ header {
 .navbar-item-child-mobile__link {
     display: block;
     color: #FFFFFF;
-    font-size: 11px;
+    font-size: 14px;
     text-decoration: none;
     padding: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family:  Roboto Condensed, sans-serif;
 }
 
 .navbar-item-child-mobile__link:hover {
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
     background-color: #cccccc;
+    color: #333333;
 }
 
 /** navbar icon */
 .navbar__icon {
-    float: right;
-    margin-right: 350px;
+    flex: 1;
+    text-align: left;
 }
 
 .navbar-icon__link {
@@ -218,7 +230,7 @@ header {
 }
 
 .content {
-    width: 68%;
+    flex: 7;
 }
 
 /* Content */
@@ -233,9 +245,11 @@ header {
     align-items: center;
     padding-top: 14px;
     margin: 0px 14px 0px 14px;
+    font-family: 'Roboto Condensed';
 }
 
 .date__post {
+    font-family: 'Roboto Condensed', helvetica, sans-serif;
     display: inline-block;
     background-color: #BE834A;
     width: 60px;
@@ -243,7 +257,7 @@ header {
     height: 60px;
     line-height: 60px;
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -320,6 +334,11 @@ header {
     border-bottom: 2px solid rgb(51, 51, 51);
 }
 
+.content-image__post {
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 16px;
+}
+
 .content-image__post--link {
     display: block;
     position: absolute;
@@ -329,7 +348,6 @@ header {
     color: #fff;
     background-color: #BE834A;
     padding: 10px;
-    font-size: 15px;
 }
 
 .content__post {
@@ -338,6 +356,10 @@ header {
     font-size: 15px;
     color: #303030;
     line-height: 22px;
+}
+
+.content__post p {
+    font-family: sans-serif;
 }
 
 /* post video */
@@ -350,19 +372,20 @@ header {
 .sidebar {
     margin-top: 30px;
     margin-left: 10px;
-    width: 32%;
+    flex: 3;
 }
 
 .sidebar .widget {
     background-color: #EEEEEE;
     margin: 0 0 10px;
     min-height: 150px;
-    padding: 20px 25px;
+    padding: 10px 25px;
     text-align: center;
 }
 
 .siderbar__header {
     background-color: #303030;
+    margin-top: 10px;
 }
 
 .siderbar-header__title {
@@ -372,6 +395,8 @@ header {
     text-align: center;
     height: 35px;
     line-height: 35px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', serif;
 }
 
 .siderbar-header__title:hover {
@@ -403,7 +428,7 @@ header {
     margin-left: -5px;
     border-left: 0px;
     text-decoration: none;
-    width: 23%;
+    width: 15%;
 }
 
 .btn__search:hover {
@@ -514,14 +539,15 @@ header {
 .content__about {
     color: #575957;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
-    padding: 25px;
+    padding: 20px;
+    font-family: Crimson Text;
 }
 
 /* Laster post */
 .laster-post__list {
-    margin-top: 50px;
+    margin-top: 65px;
 }
 .laster-post__item {
     padding: 0px 15px 50px 15px;
@@ -541,16 +567,20 @@ header {
 
 .laster-post__content {
     margin-top: 5px;
-    color: #76726C;
+    color: #6a6359;
     line-height: 25px;
     text-align: left;
-    font-size: 13px;
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /** categories */
 .categories__content {
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 0px 15px 30px 15px;
+    font-family: Crimson Text;
+    text-align: left;
 }
 
 .label-size {
@@ -562,16 +592,22 @@ header {
 }
 
 .label--size-5 {
-    font-size: 160%;
+    font-size: 150%;
 }
 
 .label--size-1 {
-    font-size: 80%;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.label--size-1 .categories-content__link {
+    opacity: 0.8;
 }
 
 .categories-content__link {
     color: #6a6359;
     text-decoration: none;
+    font-family: Crimson Text;
 }
 
 /* archive__list */
@@ -770,8 +806,7 @@ header {
 /* Footer post */
 .footer__post {
     text-align: center;
-    padding: 0px;
-    background-color: #fff;
+    margin-top: 20px;
 }
 
 .content-footer__post {
