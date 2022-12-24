@@ -41,7 +41,7 @@ header {
     text-decoration: none;
     padding: 17px;
     text-transform: uppercase;
-    font-family: Roboto Condensed;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     line-height: 17px;
 }
@@ -63,10 +63,10 @@ header {
 .navbar-item-child__link {
     display: block;
     color: #FFFFFF;
-    font-size: 14px;
     text-decoration: none;
     padding: 10px;
     text-transform: uppercase;
+    font-size: 11px;
 }
 
 .navbar-item-child__link:hover {
@@ -82,10 +82,6 @@ header {
     line-height: 50px;
     background-color: #4C4C4C;
     height: fit-content;
-}
-
-.navbar-item-child__icon--seccon {
-    display: none;
 }
 
 .navbar__mobile--icon {
@@ -114,7 +110,7 @@ header {
     padding-left: 15px;
     font-size: 14px;
     height: 27px;
-    font-family:  Roboto Condensed, sans-serif;
+    font-family:  'Roboto Condensed', sans-serif;
     text-transform: capitalize;
 }
 
@@ -139,6 +135,7 @@ header {
 }
 
 .navbar-item-child__icon--seccon {
+    display: none;
     font-size: 15px;
     height: 24px;
     margin-left: 10px;
@@ -154,11 +151,6 @@ header {
     margin: 10px 0px 15px 0px;
     line-height: 0px;
     text-align: left;
-}
-
-.navbar-item-child__link {
-    font-size: 11px;
-    display: block;
 }
 
 .navbar-item__mobile:hover .navbar-item-child__icon--seccon {
@@ -194,7 +186,7 @@ header {
     text-decoration: none;
     padding: 10px;
     text-transform: capitalize;
-    font-family:  Roboto Condensed, sans-serif;
+    font-family:  'Roboto Condensed', sans-serif;
 }
 
 .navbar-item-child-mobile__link:hover {
@@ -256,7 +248,7 @@ header {
     align-items: center;
     padding-top: 14px;
     margin: 0px 14px 0px 14px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .date__post {
@@ -346,11 +338,12 @@ header {
 }
 
 .content-image__post {
-    font-family: Roboto Condensed, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
 }
 
 .content-image__post--link {
+    width: 132px;
     display: block;
     position: absolute;
     right: 0px;
@@ -358,7 +351,8 @@ header {
     text-decoration: none;
     color: #fff;
     background-color: #BE834A;
-    padding: 10px;
+    padding: 8px;
+    text-align: center;
 }
 
 .content__post {
@@ -548,12 +542,12 @@ header {
 }
 
 .content__about {
+    font-family: 'Roboto Slab', serif;
     color: #575957;
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     padding: 20px;
-    font-family: Crimson Text;
 }
 
 /* Laster post */
@@ -590,7 +584,7 @@ header {
 .categories__content {
     margin-top: 40px;
     padding: 0px 15px 30px 15px;
-    font-family: Crimson Text;
+    font-family: 'Roboto Slab', serif;
     text-align: left;
 }
 
@@ -616,9 +610,9 @@ header {
 }
 
 .categories-content__link {
+    font-family: 'Roboto Slab', serif;
     color: #6a6359;
     text-decoration: none;
-    font-family: Crimson Text;
 }
 
 /* archive__list */
@@ -665,10 +659,6 @@ header {
     display: none;
 }
 
-.archive-sub__item {
-    padding-bottom: 5px;
-}
-
 .archive-sub-item__icon {
     font-size: 20px;
 }
@@ -680,7 +670,7 @@ header {
 }
 
 .archive-sub__item {
-    padding-top: 5px;
+    padding: 5px 0px;
 }
 
 /* related articles */
@@ -887,7 +877,7 @@ header {
 
 .pagination-item__link {
     font-size: 12px;
-    color: #303030;;
+    color: #303030;
     text-decoration: none;
 }
 
